@@ -11,8 +11,8 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <section>
-      <h2>Ika's Portfolio</h2>
+    <section class="grid">
+      <div class="leading"><h2 class="leading-text">Ika's Portfolio</h2></div>
       <nav>
         <ul>
           <li>Technical Skills</li>
@@ -23,39 +23,41 @@
       </nav>
     </section>
     <section id="welcome">
-      <h1>This is my front-end portfolio page.</h1>
+      <div class="grid main">
+        <div id="main-text-button">
+          <p>
+            Check me out, my markup skills and Javascript, too. And you can ask
+            me anything
+          </p>
+          <a href="#contact" class="button">Get in Touch</a>
+        </div>
 
-      <div>
-        <p>
-          Check me out, my markup skills and Javascript, too. And you can ask me
-          anything
-        </p>
-        <a href="#contact" class="button">Get in Touch</a>
+        <img id="main-image" src="assets/cool.png" />
       </div>
-      <img id="main-image" src="assets/cool.png" />
     </section>
     <section>
       <h1>My Technical Skills:</h1>
-
-      <div>
-        <img src="assets/html.png" />
-        <h2>HTML</h2>
-      </div>
-      <div>
-        <img src="assets/css.png" />
-        <h2>CSS</h2>
-      </div>
-      <div>
-        <img src="assets/js.png" />
-        <h2>ES6</h2>
-      </div>
-      <div>
-        <img src="assets/react.png" />
-        <h2>React</h2>
-      </div>
-      <div>
-        <img src="assets/vue.png" />
-        <h2>Vue</h2>
+      <div class="techskills">
+        <div>
+          <img src="assets/html.png" class="techimg" />
+          <h2>HTML</h2>
+        </div>
+        <div>
+          <img src="assets/css.png" class="techimg" />
+          <h2>CSS</h2>
+        </div>
+        <div>
+          <img src="assets/js.png" class="techimg" />
+          <h2>ES6</h2>
+        </div>
+        <div>
+          <img src="assets/react.png" class="techimg" />
+          <h2>React</h2>
+        </div>
+        <div>
+          <img src="assets/vue.png" class="techimg" />
+          <h2>Vue</h2>
+        </div>
       </div>
     </section>
     <section>

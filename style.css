@@ -4,8 +4,16 @@
   --tertiary: rgb(247, 92, 123);
 }
 #main-image {
-  max-width: 40vw;
+  width: 150%;
   height: auto;
+  grid-column: 6 / span 3;
+}
+#main-text-button {
+  grid-column: 1 / span 5;
+  text-align: center;
+}
+.main {
+  align-items: center;
 }
 body {
   background-color: var(--primary);
@@ -13,7 +21,7 @@ body {
   font-family: Abel;
 }
 .button {
-  border: 2px solid var(--tertiary);
+  border: 4px solid gold;
   padding: 6px 12px;
   color: var(--secondary);
   font-weight: bold;
@@ -22,7 +30,7 @@ body {
   display: inline-block;
 }
 .button:hover {
-  background-color: var(--tertiary);
+  background-color: gold;
 }
 input,
 textarea {
@@ -69,8 +77,10 @@ h2 {
 }
 ul {
   display: flex;
-  width: 50%;
+  width: 100%;
+  height: 100%;
   justify-content: space-around;
+  align-items: center;
 }
 li {
   color: rgb(50, 50, 235);
@@ -88,10 +98,55 @@ p {
   size: 1.1em;
 }
 
+.techskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5%;
+}
+.techskills div {
+  text-align: center;
+}
+.techskills h2 {
+  color: var(--secondary);
+  font-weight: bold;
+}
+.techimg {
+  max-width: 100%;
+  height: 70%;
+  object-fit: contain;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+nav {
+  grid-column: 6 / span 3;
+  display: none;
+}
+.leading {
+  grid-column: 1 / span 6;
+}
+.leading-text {
+  color: var(--secondary);
+  font-weight: bold;
+  border-bottom: 2px solid crimson;
+  display: inline-block;
+  padding: 0rem 0.5rem;
+  margin-left: 1rem;
+}
 /* styles for small tablets */
 @media screen and (min-width: 680px) {
   body {
     font-size: 16px;
+  }
+  .leading {
+    grid-column: 1 / span 4 !important;
+  }
+  nav {
+    display: inline-block;
+  }
+  #main-image {
+    width: 100%;
   }
 }
 /* styles for large tablets and small laptops */
@@ -99,10 +154,28 @@ p {
   body {
     font-size: 20px;
   }
+  .leading {
+    grid-column: 1 / span 4 !important;
+  }
+  nav {
+    display: inline-block;
+  }
+  #main-image {
+    width: 100%;
+  }
 }
 /* styles for larger screens */
 @media screen and (min-width: 1200px) {
   body {
     font-size: 24px;
+  }
+  .leading {
+    grid-column: 1 / span 4 !important;
+  }
+  nav {
+    display: inline-block;
+  }
+  #main-image {
+    width: 100%;
   }
 }
