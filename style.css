@@ -1,0 +1,108 @@
+:root {
+  --primary: rgb(241, 204, 107);
+  --secondary: rgb(48, 48, 236);
+  --tertiary: rgb(247, 92, 123);
+}
+#main-image {
+  max-width: 40vw;
+  height: auto;
+}
+body {
+  background-color: var(--primary);
+  overflow-x: hidden;
+  font-family: Abel;
+}
+.button {
+  border: 2px solid var(--tertiary);
+  padding: 6px 12px;
+  color: var(--secondary);
+  font-weight: bold;
+  border-radius: 5%;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.button:hover {
+  background-color: var(--tertiary);
+}
+input,
+textarea {
+  background: rgba(228, 52, 87, 0.03);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid var(--tertiary);
+  color: whitesmoke;
+}
+textarea {
+  height: 5rem;
+}
+::placeholder {
+  color: rgba(48, 48, 236, 0.8);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* reset browser defaults */
+
+li {
+  list-style-type: none;
+}
+body,
+a,
+li,
+ul,
+p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h3,
+h4 {
+  color: var(--tertiary);
+  font-weight: normal;
+  font-size: 1.2em;
+}
+h2 {
+  color: var(--tertiary);
+  font-weight: normal;
+  font-size: 1em;
+}
+ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+li {
+  color: rgb(50, 50, 235);
+  font-weight: bold;
+  font-size: 0.7em;
+  height: 2em;
+  box-sizing: border-box;
+}
+li:hover {
+  border-bottom: 2px solid var(--tertiary);
+  display: inline-block;
+}
+p {
+  color: var(--secondary);
+  size: 1.1em;
+}
+
+/* styles for small tablets */
+@media screen and (min-width: 680px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* styles for large tablets and small laptops */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+}
+/* styles for larger screens */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
+}
