@@ -179,6 +179,20 @@ nav {
   margin-left: 1rem;
 }
 
+form > * {
+  width: 80%;
+  margin-top: 1em;
+}
+input:focus {
+  border: 3px solid crimson;
+}
+textarea:focus {
+  border: 3px solid crimson;
+}
+button {
+  background: none;
+}
+
 /* styles for small tablets */
 @media screen and (min-width: 680px) {
   body {
@@ -198,6 +212,9 @@ nav {
   }
   #portfolio-text {
     margin-top: 0;
+  }
+  form > * {
+    width: 30%;
   }
 }
 /* styles for large tablets and small laptops */
