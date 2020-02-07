@@ -57,6 +57,7 @@ body {
   border-radius: 5%;
   text-transform: uppercase;
   display: inline-block;
+  margin-top: 1rem;
 }
 .button:hover {
   background-color: gold;
@@ -192,7 +193,21 @@ textarea:focus {
 button {
   background: none;
 }
-
+.footer {
+  display: flex;
+  height: 5vh;
+  justify-content: center;
+}
+.footer img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.footer a {
+  display: inline-block;
+  flex-basis: 10%;
+}
 /* styles for small tablets */
 @media screen and (min-width: 680px) {
   body {
